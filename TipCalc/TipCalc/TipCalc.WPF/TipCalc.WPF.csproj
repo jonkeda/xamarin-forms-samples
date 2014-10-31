@@ -65,6 +65,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\packages\Xamarin.Forms.1.2.3.6257\lib\portable-win+net45+wp80+MonoAndroid10+MonoTouch10\Xamarin.Forms.Xaml.dll</HintPath>
     </Reference>
+    <Reference Include="Xamarin.Forms.Xaml.UnitTests">
+      <HintPath>..\..\packages\Xamarin.Forms.Platform.WPF.0.4.0.39324\lib\net45\Xamarin.Forms.Xaml.UnitTests.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
@@ -102,7 +105,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <None Include="packages.config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -113,10 +118,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Xamarin.Forms.Platform.WPF\Xamarin.Forms.Platform.WPF.csproj">
-      <Project>{08834C7E-01BF-45ED-A526-B051E7A02C04}</Project>
-      <Name>Xamarin.Forms.Platform.WPF</Name>
-    </ProjectReference>
     <ProjectReference Include="..\TipCalc\TipCalc.csproj">
       <Project>{47465f9a-97e6-465f-ac57-030191c62c5b}</Project>
       <Name>TipCalc</Name>
